@@ -1,0 +1,7 @@
+<div id="buttonld" #buttonld>
+  <div class="btldcapsule" [ngStyle]="style_data">
+    <div class="spinnerbtl" *ngIf="loading"></div>
+    <span *ngIf="!loading">{{ text }}</span>
+    <span *ngIf="loading">{{ loadingtext }}</span>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+#buttonld {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  .btldcapsule {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 2px;
+    span{
+      width: 100%;
+      text-align: center;
+    }
+    .spinnerbtl {
+     background: url("./spin.svg");
+     width: 30px;
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     animation: rotatespinner 1s infinite
+    }
+  }
+
+  .btldcapsule:active {
+    transform: scale(0.95);
+  }
+
+  @keyframes rotatespinner{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+}
